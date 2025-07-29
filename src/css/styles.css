@@ -108,9 +108,9 @@ main, .container, form {
     top: -150px;
 }
 
-.dell {
-    width: 70px;
-    height: 70px;
+.pokemon{
+    width: 100px;
+    height: 100px;
 }
 
 .circles li:nth-child(1) {
