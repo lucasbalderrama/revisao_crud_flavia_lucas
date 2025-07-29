@@ -155,7 +155,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <p>&copy; <?php echo date('Y'); ?> - Atividade de Revisão Crud - Pokemon</p>
     </div>
   </footer>
-
 </body>
-
 </html>
