@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  max-width: 680px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 40px rgba(206, 165, 2, 0.673);
+  transition: box-shadow 0.3s ease;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 20px;
+  box-shadow: 0 0 80px 15px rgba(232, 182, 5, 0.308);
+  opacity: 0.7;
+}
+
+form h2 {
+  grid-column: span 2;
+   font-family: "Outfit", sans-serif;
+    font-weight:800;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ffcc00, #ff6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+form textarea {
+  grid-column: span 2;
+  resize: vertical;
+  min-height: 70px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #ff9800;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 153, 0, 0.349);
+}
+
+.preview-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+form button:hover {
+  background: #fb8c00;
+  transform: translateY(-2px);
+}
