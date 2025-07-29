@@ -41,7 +41,7 @@ $resultado = $conn->query($sql);
           <li><a href="cadastrar.php">Cadastrar</a></li>
           <li><a href="listar.php">Listar</a></li>
           <li><a href="pesquisar.php">Pesquisar</a></li>
-          <li><a href="relatorio.php">Relatório</a></li>
+       
         </ul>
       </nav>
     </div>
@@ -49,16 +49,16 @@ $resultado = $conn->query($sql);
 
   <div class="area">
     <ul class="circles">
-      <li><img class="dell" src="../src/assets/img/pokemon 1.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 2.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 3.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 4.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 5.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 6.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 7.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 8.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 9.png" alt=""></li>
-      <li><img class="dell" src="../src/assets/img/pokemon 10.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 1.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 2.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 3.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 4.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 5.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 6.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 7.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 8.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 9.png" alt=""></li>
+      <li><img class="pokemon" src="../src/assets/img/pokemon 10.png" alt=""></li>
     </ul>
     <main>
       <h1 id='pok-h1'>LISTA DE POKÉMONS CADASTRADOS:</h1>

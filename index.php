@@ -20,11 +20,11 @@ include './config/conexao.php';
       <img id="logo" src="./src/assets/img/logo pookemon perdido.png" alt="Pokémon Perdido">
       <nav>
         <ul>
-          <li><a href="index.php">Início</a></li>
+       
           <li><a href="./pages/cadastrar.php">Cadastrar</a></li>
           <li><a href="./pages/listar.php">Listar</a></li>
           <li><a href="./pages/pesquisar.php">Pesquisar</a></li>
-          <li><a href="./pages/relatorio.php">Relatório</a></li>
+        
         </ul>
       </nav>
     </div>
@@ -32,16 +32,16 @@ include './config/conexao.php';
 
   <div class="area">
     <ul class="circles">
-      <li><img class="dell" src="./src/assets/img/pokemon 1.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 2.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 3.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 4.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 5.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 6.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 7.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 8.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 9.png" alt=""></li>
-      <li><img class="dell" src="./src/assets/img/pokemon 10.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 1.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 2.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 3.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 4.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 5.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 6.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 7.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 8.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 9.png" alt=""></li>
+      <li><img class="pokemon" src="./src/assets/img/pokemon 10.png" alt=""></li>
     </ul>
   </div>
 

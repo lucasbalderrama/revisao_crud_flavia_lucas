@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="cadastrar.php">Cadastrar</a></li>
           <li><a href="listar.php">Listar</a></li>
           <li><a href="pesquisar.php">Pesquisar</a></li>
-          <li><a href="relatorio.php">Relatório</a></li>
+        
         </ul>
       </nav>
     </div>

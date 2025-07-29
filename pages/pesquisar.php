@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['search'])) {
       <img id="logo" src="../src/assets/img/logo pookemon perdido.png" alt="Pokémon Perdido">
       <nav>
         <ul>
-          <li><a href="../index.php">Início</a></li>
+          
           <li><a href="cadastrar.php">Cadastrar</a></li>
           <li><a href="listar.php">Listar</a></li>
           <li><a href="pesquisar.php">Pesquisar</a></li>
-          <li><a href="relatorio.php">Relatório</a></li>
+       
         </ul>
       </nav>
     </div>
