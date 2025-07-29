@@ -1,0 +1,58 @@
+#pok-h1 {
+    text-align: center;
+    color: #ffa200;
+    margin-top: 10px;
+    font-size:x-large;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#pok-h1-2 {
+    text-align: center;
+    color: #ffa200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:x-large;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size:x-large;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+thead {
+    background-color: #36476B;
+    color: white;
+}
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    
+}
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 15px;
+    background-color: white;
+    width: 50px;
+    max-width: 100px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.pokemons {
+    max-width: 1200px;
+    margin: 0 auto;
+}
