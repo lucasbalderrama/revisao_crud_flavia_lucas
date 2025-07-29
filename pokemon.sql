@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Jul-2025 às 13:44
+-- Tempo de geração: 29-Jul-2025 às 15:01
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -33,8 +33,10 @@ CREATE TABLE `pokemons` (
   `tipo_pokemon` varchar(200) NOT NULL,
   `localizacao_pokemon` varchar(600) NOT NULL,
   `registro_pokemon` date NOT NULL,
-  `atributos_pokemon` enum('HP','Ataque','Defesa') NOT NULL,
-  `obs_pokemon` varchar(800) DEFAULT NULL
+  `obs_pokemon` varchar(800) DEFAULT NULL,
+  `hp_pokemon` varchar(200) DEFAULT NULL,
+  `ataque_pokemon` varchar(200) DEFAULT NULL,
+  `defesa_pokemon` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
