@@ -17,7 +17,7 @@ include '../config/conexao.php';
 <body>
   <header>
     <div id="container">
-      <img id="logo" src="../src/assets/img/pokebola.png" alt="Pokémon Perdido">
+      <img id="logo" src="../src/assets/img/logo pookemon perdido.png" alt="Pokémon Perdido">
       <nav>
         <ul>
           <li><a href="../index.php">Início</a></li>
