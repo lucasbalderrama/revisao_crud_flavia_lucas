@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Jul-2025 às 15:01
+-- Tempo de geração: 29-Jul-2025 às 15:07
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `pokemons` (
   `id_pokemon` int(11) NOT NULL,
   `nome_pokemon` varchar(300) NOT NULL,
-  `tipo_pokemon` varchar(200) NOT NULL,
+  `tipo_pokemon` enum('Normal','Fogo','Água','Grama','Elétrico','Gelo','Lutador','Venenoso','Terra','Voador',' Psíquico','Inseto','Pedra','Fantasma','Dragão','Aço','Sombrio','Fada') NOT NULL,
   `localizacao_pokemon` varchar(600) NOT NULL,
   `registro_pokemon` date NOT NULL,
   `obs_pokemon` varchar(800) DEFAULT NULL,
