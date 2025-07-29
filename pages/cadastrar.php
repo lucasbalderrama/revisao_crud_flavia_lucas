@@ -9,7 +9,7 @@ include '../config/conexao.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastrar Pokemons</title>
+  <title>Cadastrar Pokémons</title>
   <link rel="stylesheet" href="../src/css/styles.css">
   <link rel="icon" type="image/x-icon" href="../src/assets/img/pokebola.png">
 </head>
@@ -17,7 +17,7 @@ include '../config/conexao.php';
 <body>
   <header>
     <div id="container">
-      <img id="logo" src="../src/assets/img/pokebola.png" alt="Pokémon Perdido">
+      <img id="logo" src="../src/assets/img/logo pookemon perdido.png" alt="Pokémon Perdido">
       <nav>
         <ul>
           <li><a href="../index.php">Início</a></li>
