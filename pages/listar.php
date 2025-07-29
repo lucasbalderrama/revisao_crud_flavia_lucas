@@ -1,3 +1,4 @@
+<!-- Flávia Glenda e Lucas Randal -->
 <?php
 include '../config/conexao.php';
 
@@ -20,7 +21,7 @@ include '../config/conexao.php';
       <img id="logo" src="../src/assets/img/logo pookemon perdido.png" alt="Pokémon Perdido">
       <nav>
         <ul>
-          <li><a href="../index.php">Início</a></li>
+         
           <li><a href="cadastrar.php">Cadastrar</a></li>
           <li><a href="listar.php">Listar</a></li>
           <li><a href="pesquisar.php">Pesquisar</a></li>
