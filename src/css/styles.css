@@ -197,6 +197,7 @@ main, .container, form {
   background: linear-gradient(to right, #ffcc00, #ff6f00);
   color: #fff;
   padding: 20px 0;
+  margin-top: 100PX;
   text-align: center;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
   font-family: "Outfit", sans-serif;
