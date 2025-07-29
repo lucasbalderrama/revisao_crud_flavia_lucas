@@ -1,6 +1,37 @@
+<!-- Flávia Glenda e Lucas Randal -->
 <?php
 include '../config/conexao.php';
 
+$mensagem = "";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nome = $_POST['nome_pokemon'];
+    $tipo = $_POST['tipo_pokemon'];
+    $local = $_POST['localizacao_pokemon'];
+    $data = $_POST['registro_pokemon'];
+    $obs = $_POST['obs_pokemon'];
+    $hp = $_POST['hp_pokemon'];
+    $ataque = $_POST['ataque_pokemon'];
+    $def = $_POST['defesa_pokemon'];
+
+    $sql = "INSERT INTO pokemons (
+        nome_pokemon, tipo_pokemon, localizacao_pokemon,
+        registro_pokemon, obs_pokemon, hp_pokemon,
+        ataque_pokemon, defesa_pokemon
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssssssss", $nome, $tipo, $local, $data, $obs, $hp, $ataque, $def);
+
+    if ($stmt->execute()) {
+        $mensagem = " Pokémon cadastrado com sucesso!";
+    } else {
+        $mensagem = " Erro ao cadastrar: " . $stmt->error;
+    }
+
+    $stmt->close();
+    $conn->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -43,12 +74,49 @@ include '../config/conexao.php';
       <li><img class="dell" src="../src/assets/img/pokemon 9.png" alt=""></li>
       <li><img class="dell" src="../src/assets/img/pokemon 10.png" alt=""></li>
     </ul>
-  </div>
+      <main>
+<div class="container">
+    <?php if (!empty($mensagem)) echo "<div class='msg'>$mensagem</div>"; ?>
 
-  <main>
+    <form method="POST" action="cadastrar.php">
+        <h2>Cadastrar Pokémon</h2>
 
+        <input type="text" name="nome_pokemon" placeholder="Nome do Pokémon" required>
+
+        <select name="tipo_pokemon" required>
+            <option value="">Selecione o tipo</option>
+            <option value="Normal">Normal</option>
+            <option value="Fogo">Fogo</option>
+            <option value="Água">Água</option>
+            <option value="Grama">Grama</option>
+            <option value="Elétrico">Elétrico</option>
+            <option value="Gelo">Gelo</option>
+            <option value="Lutador">Lutador</option>
+            <option value="Venenoso">Venenoso</option>
+            <option value="Terra">Terra</option>
+            <option value="Voador">Voador</option>
+            <option value="Psíquico">Psíquico</option>
+            <option value="Inseto">Inseto</option>
+            <option value="Pedra">Pedra</option>
+            <option value="Fantasma">Fantasma</option>
+            <option value="Dragão">Dragão</option>
+            <option value="Aço">Aço</option>
+            <option value="Sombrio">Sombrio</option>
+            <option value="Fada">Fada</option>
+        </select>
+
+        <input type="text" name="localizacao_pokemon" placeholder="Localização" required>
+        <input type="date" name="registro_pokemon" required>
+        <textarea name="obs_pokemon" placeholder="Observações"></textarea>
+        <input type="text" name="hp_pokemon" placeholder="HP">
+        <input type="text" name="ataque_pokemon" placeholder="Ataque">
+        <input type="text" name="defesa_pokemon" placeholder="Defesa">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
   </main>
-
+  </div>
   <footer class="footer">
     <div class="footer-container">
       <p>&copy; <?php echo date('Y'); ?> - Atividade de Revisão Crud - Pokemon</p>
