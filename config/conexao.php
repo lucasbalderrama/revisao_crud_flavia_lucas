@@ -1,3 +1,4 @@
+<!-- Flávia Glenda e Lucas Randal -->
 <?php
 $host = "localhost";
 $user = "root";
